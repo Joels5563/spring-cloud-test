@@ -7,6 +7,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-server/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-sample/pom.xml" />
       </list>
     </option>
   </component>

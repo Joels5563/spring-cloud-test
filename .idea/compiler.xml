@@ -17,12 +17,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-cloud-repo" />
-        <module name="spring-cloud-sample" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-cloud-repo" target="1.6" />
       <module name="spring-cloud-sample" target="1.6" />
+      <module name="spring-cloud-sample (1)" target="1.6" />
       <module name="spring-cloud-test" target="1.6" />
     </bytecodeTargetLevel>
   </component>
