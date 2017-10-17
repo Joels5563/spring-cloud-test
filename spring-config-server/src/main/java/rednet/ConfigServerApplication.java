@@ -11,6 +11,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  */
 
 @SpringBootApplication
+//设置当前项目为配置文件服务器
 @EnableConfigServer
 public class ConfigServerApplication {
 
