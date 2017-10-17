@@ -23,7 +23,9 @@
       <module name="spring-cloud-repo" target="1.6" />
       <module name="spring-cloud-sample" target="1.6" />
       <module name="spring-cloud-sample (1)" target="1.6" />
-      <module name="spring-cloud-test" target="1.6" />
+      <module name="spring-cloud-server" target="1.6" />
+      <module name="spring-cloud-test" target="1.5" />
+      <module name="spring-config-server" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
