@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-repo/spring-cloud-repo.iml" filepath="$PROJECT_DIR$/spring-cloud-repo/spring-cloud-repo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-sample/spring-cloud-sample.iml" filepath="$PROJECT_DIR$/spring-cloud-sample/spring-cloud-sample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-cloud-server/spring-cloud-server.iml" filepath="$PROJECT_DIR$/spring-cloud-server/spring-cloud-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service.iml" filepath="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-test.iml" filepath="$PROJECT_DIR$/spring-cloud-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-test.iml" filepath="$PROJECT_DIR$/spring-cloud-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-config-server/spring-config-server.iml" filepath="$PROJECT_DIR$/spring-config-server/spring-config-server.iml" />
