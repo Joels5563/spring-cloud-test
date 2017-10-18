@@ -17,15 +17,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-cloud-repo" />
+        <module name="spring-cloud-service" />
+        <module name="spring-cloud-ui" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring-cloud-eureka" target="1.6" />
       <module name="spring-cloud-repo" target="1.6" />
       <module name="spring-cloud-sample" target="1.6" />
       <module name="spring-cloud-sample (1)" target="1.6" />
       <module name="spring-cloud-server" target="1.6" />
       <module name="spring-cloud-service" target="1.6" />
       <module name="spring-cloud-test" target="1.5" />
+      <module name="spring-cloud-ui" target="1.6" />
       <module name="spring-config-server" target="1.6" />
     </bytecodeTargetLevel>
   </component>
