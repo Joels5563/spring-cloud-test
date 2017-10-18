@@ -9,9 +9,13 @@ import rednet.service.model.User;
 
 import java.util.List;
 
-
+/**
+ * @author zhouchao
+ * @Description 用户服务
+ * @date 2017/10/17 14:31
+ */
 @Service
-@Transactional
+@Transactional(rollbackFor = {})
 public class UserService {
 
 

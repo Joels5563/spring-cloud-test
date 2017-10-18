@@ -2,112 +2,119 @@ package rednet.service.conf;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
+/**
+ * @author zhouchao
+ * @Description 数据源配置信息
+ * @date 2017/10/17 14:31
+ */
 @ConfigurationProperties(prefix = DataSourceProperties.DS, ignoreUnknownFields = false)
 public class DataSourceProperties {
 
-	//对应配置文件里的配置键
-	public final static String DS="mysqldb.datasource";	
-	private String driverClassName ="com.mysql.jdbc.Driver";
-	
-	private String url; 
-	private String username; 
-	private String password;
-	private int maxActive = 100;
-	private int maxIdle = 8;
-	private int minIdle = 8;
-	private int initialSize = 10;
-	private String validationQuery;
+    /**
+     * 对应配置文件里的配置键
+     */
+    public static final String DS = "mysqldb.datasource";
+    private String driverClassName = "com.mysql.jdbc.Driver";
 
-	public String getDriverClassName() {
-		return driverClassName;
-	}
+    private String url;
+    private String username;
+    private String password;
+    private int maxActive = 100;
+    private int maxIdle = 8;
+    private int minIdle = 8;
+    private int initialSize = 10;
+    private String validationQuery;
 
-	public void setDriverClassName(String driverClassName) {
-		this.driverClassName = driverClassName;
-	}
+    public String getDriverClassName() {
+        return driverClassName;
+    }
 
-	public String getUrl() {
-		return url;
-	}
+    public void setDriverClassName(String driverClassName) {
+        this.driverClassName = driverClassName;
+    }
 
-	public void setUrl(String url) {
-		this.url = url;
-	}
+    public String getUrl() {
+        return url;
+    }
 
-	public String getUsername() {
-		return username;
-	}
+    public void setUrl(String url) {
+        this.url = url;
+    }
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+    public String getUsername() {
+        return username;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public String getPassword() {
+        return password;
+    }
 
-	public int getMaxActive() {
-		return maxActive;
-	}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-	public void setMaxActive(int maxActive) {
-		this.maxActive = maxActive;
-	}
+    public int getMaxActive() {
+        return maxActive;
+    }
 
-	public int getMaxIdle() {
-		return maxIdle;
-	}
+    public void setMaxActive(int maxActive) {
+        this.maxActive = maxActive;
+    }
 
-	public void setMaxIdle(int maxIdle) {
-		this.maxIdle = maxIdle;
-	}
+    public int getMaxIdle() {
+        return maxIdle;
+    }
 
-	public int getMinIdle() {
-		return minIdle;
-	}
+    public void setMaxIdle(int maxIdle) {
+        this.maxIdle = maxIdle;
+    }
 
-	public void setMinIdle(int minIdle) {
-		this.minIdle = minIdle;
-	}
+    public int getMinIdle() {
+        return minIdle;
+    }
 
-	public int getInitialSize() {
-		return initialSize;
-	}
+    public void setMinIdle(int minIdle) {
+        this.minIdle = minIdle;
+    }
 
-	public void setInitialSize(int initialSize) {
-		this.initialSize = initialSize;
-	}
+    public int getInitialSize() {
+        return initialSize;
+    }
 
-	public String getValidationQuery() {
-		return validationQuery;
-	}
+    public void setInitialSize(int initialSize) {
+        this.initialSize = initialSize;
+    }
 
-	public void setValidationQuery(String validationQuery) {
-		this.validationQuery = validationQuery;
-	}
+    public String getValidationQuery() {
+        return validationQuery;
+    }
 
-	public boolean isTestOnBorrow() {
-		return testOnBorrow;
-	}
+    public void setValidationQuery(String validationQuery) {
+        this.validationQuery = validationQuery;
+    }
 
-	public void setTestOnBorrow(boolean testOnBorrow) {
-		this.testOnBorrow = testOnBorrow;
-	}
+    public boolean isTestOnBorrow() {
+        return testOnBorrow;
+    }
 
-	public boolean isTestOnReturn() {
-		return testOnReturn;
-	}
+    public void setTestOnBorrow(boolean testOnBorrow) {
+        this.testOnBorrow = testOnBorrow;
+    }
 
-	public void setTestOnReturn(boolean testOnReturn) {
-		this.testOnReturn = testOnReturn;
-	}
+    public boolean isTestOnReturn() {
+        return testOnReturn;
+    }
 
-	private boolean testOnBorrow = false;
+    public void setTestOnReturn(boolean testOnReturn) {
+        this.testOnReturn = testOnReturn;
+    }
 
-	private boolean testOnReturn = false;
+    private boolean testOnBorrow = false;
+
+    private boolean testOnReturn = false;
 
 }

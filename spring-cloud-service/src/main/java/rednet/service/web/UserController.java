@@ -9,7 +9,11 @@ import rednet.service.model.User;
 
 import java.util.List;
 
-
+/**
+ * @author zhouchao
+ * @Description 用户信息控制器
+ * @date 2017/10/17 14:31
+ */
 @RestController
 public class UserController {
 
