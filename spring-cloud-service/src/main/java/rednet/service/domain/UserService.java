@@ -1,11 +1,12 @@
 package rednet.service.domain;
 
 
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import rednet.service.dao.UserDao;
-import rednet.service.model.User;
+import rednet.service.dao.UserInfoMapper;
+import rednet.service.model.UserInfo;
 
 import java.util.List;
 
@@ -15,15 +16,13 @@ import java.util.List;
  * @date 2017/10/17 14:31
  */
 @Service
-@Transactional(rollbackFor = {})
+@Transactional(rollbackFor = NullPointerException.class)
+@AllArgsConstructor(onConstructor = @__(@Autowired))
 public class UserService {
 
+    private UserInfoMapper userMapper;
 
-    @Autowired
-    private UserDao userMapper;
-
-    public List<User> searchAll() {
-        List<User> list = userMapper.findAll();
-        return list;
+    public List<UserInfo> searchAll() {
+        return userMapper.findAll();
     }
 }

@@ -1,0 +1,8 @@
+rednet\service\conf\DataSourceProperties.class
+rednet\service\web\UserController.class
+rednet\service\domain\UserService.class
+rednet\service\dao\UserDao.class
+rednet\service\model\User.class
+rednet\service\ServiceApplication.class
+META-INF\spring-configuration-metadata.json
+rednet\service\conf\MybatisDataSource.class

@@ -1,6 +1,8 @@
-package com.rednet;
+package rednet;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.actuate.metrics.CounterService;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,9 +18,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @SpringBootApplication
 public class SampleController {
 
+    @Autowired
+    private CounterService counterService;
+
     @ResponseBody
     @RequestMapping(value = "/")
     String home() {
+        counterService.increment("rednet.hello.count");
         return "Hello World!";
     }
 
